@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: custom;
+      src: url(/fonts/D-DIN.otf) format("opentype");
+    }
+    @font-face {
+      font-family: custom-bold;
+      src: url(/fonts/D-DIN-Bold.otf) format("opentype");
+    }
+    /* @font-face {
+      font-family: custom;
+      src: url(/fonts/D-DINCondensed.otf) format("opentype");
+    }
+    @font-face {
+      font-family: custom-bold;
+      src: url(/fonts/D-DINCondensed-Bold.otf) format("opentype");
+    } */
+}
+
+.btn-custom:after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover:after {
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.underline-custom {
+  position: relative;  
+}
+
+.underline-custom:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.underline-custom:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
+}
