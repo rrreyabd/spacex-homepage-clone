@@ -84,7 +84,7 @@ const Navbar = () => {
           <span className='static xl:hidden w-[40px]'></span>
           <img src="./logo.png" alt="logo" className="h-6 sm:h-8 pb-1"/>
           
-          <label className={`burger ${showNavbar ? '' : 'disabled'}`} htmlFor="burger">
+          <label className={`xl:hidden burger ${showNavbar ? '' : 'disabled'}`} htmlFor="burger">
             <input
               type="checkbox"
               id="burger"
