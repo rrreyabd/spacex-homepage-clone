@@ -9,7 +9,7 @@ const Header = ({status, title}) => {
         >
           {status}
         </h1>
-
+        
         <h2 
           data-aos="fade-up" 
           data-aos-duration="700"

@@ -20,10 +20,10 @@ const Section = ({asset, headerStatus, headerTitle, btnTarget, btnText}) => {
             {isVideo ? (
                 <video autoPlay loop muted className="absolute w-full h-full object-cover" src={assetUrl} />
             ) : (
-                <div className="absolute w-full h-full" style={{backgroundImage: `url(${assetUrl})`, backgroundSize: 'cover'}} />
+                <div className="absolute w-full bg-center h-full" style={{backgroundImage: `url(${assetUrl})`, backgroundSize: 'cover'}} />
             )}
             
-            <div className="flex flex-col gap-8 text-white absolute left-32 bottom-32">
+            <div className="flex flex-col gap-8 text-white absolute left-16 bottom-24 md:left-32 md:bottom-32">
                 <Header 
                     status={headerStatus}
                     title={headerTitle}
