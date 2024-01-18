@@ -111,8 +111,8 @@ const Navbar = () => {
           }
         </nav>
       
-        <div className={`fixed w-screen h-screen top-0 right-0 bg-black z-10 transition-opacity duration-700 ease-out
-        ${isSidebarVisible ? 'opacity-50' : 'opacity-0' } `}></div>
+        <div className={`fixed top-0 right-0 bg-black transition-opacity duration-700 ease-out
+        ${isSidebarVisible ? 'w-screen h-screen opacity-50' : 'opacity-0' } `}></div>
         
         <div className={`fixed xl:hidden h-screen bg-black w-96 -right-96 top-0 transition duration-700 ease-out z-20 px-11 py-16
           ${isSidebarVisible ? '-translate-x-96' : 'translate-x-0' } 
