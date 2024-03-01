@@ -1,6 +1,7 @@
 {
   "name": "spacex-homepage-clone",
-  "private": true,
+  "private": false,
+  "homepage": "https://rrreyabd.github.io/spacex-homepage-clone",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
