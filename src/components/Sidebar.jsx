@@ -9,7 +9,7 @@ const Sidebar = ({navigationList}) => {
                 <a 
                 className={`underline-custom hidden xl:block ${showNavbar ? '' : 'disabled'}`} 
                 key={navigation.id} 
-                href={navigation.url}
+                href="/"
                 >
                 {navigation.name}
                 </a>

@@ -109,7 +109,7 @@ const Navbar = () => {
                     showNavbar ? "" : "disabled"
                   }`}
                   key={navigation.id}
-                  href={navigation.url}
+                  href="/"
                 >
                   {navigation.name}
                 </a>
@@ -136,7 +136,7 @@ const Navbar = () => {
                     <a
                       className="border-b border-white border-opacity-30 h-8 transition duration-500 ease-in-out hover:brightness-50"
                       key={navigation.id}
-                      href={navigation.url}
+                      href="/"
                     >
                       {navigation.name}
                     </a>
